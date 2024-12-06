@@ -1,3 +1,9 @@
+{{ 
+    config(
+        materialized='table'
+    ) 
+}}
+
 with monthly_orders as (
     select 
         distinct 
