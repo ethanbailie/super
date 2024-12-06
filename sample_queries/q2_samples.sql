@@ -26,9 +26,9 @@ from dbt.customer_retention
 -- gender split of cohorts
 select
     cohort_month,
-    count(case when gender = 'Male' then customer_id end) as male_count,
-    count(case when gender = 'Female' then customer_id end) as female_count,
-    count(customer_id) as cohort_size
+    count(case when gender = 'M' then customer_id end) as male_count,
+    count(case when gender = 'F' then customer_id end) as female_count,
+    count(customer_id) as total_cohort_size
 from dbt.cohorts
 group by all
 ;
