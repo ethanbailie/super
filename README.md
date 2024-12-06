@@ -61,6 +61,7 @@ The key models to set up Beth to track these KPIs are as follows:
         - source freshness, unique keys, duplicate rows, nulls, etc...
     - primary keys in a prod environment for things like cohort would be created through an md5 hash
     - sorting of the models so that they arent all just in one folder
+    - 'in the middle' models not directly queried would be configured to materialize as views or ephemeral instead of as tables, it was just easier to write everything quickly for this case study by doing it this way because I could easily query it on my own as needed
 
 
 ### Database structure if you want to run this yourself:
