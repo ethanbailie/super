@@ -24,6 +24,7 @@ from dbt.customer_retention
 ;
 
 -- gender split of cohorts
+-- this example query shows how you might segment cohorts by gender, but ideally this would live in looker instead of a dbt model
 select
     cohort_month,
     count(case when gender = 'M' then customer_id end) as male_count,
