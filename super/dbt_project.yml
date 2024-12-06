@@ -1,0 +1,22 @@
+name: 'super'
+version: '1.0.0'
+  
+profile: 'super'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  super:
+    average_order_value:
+      +materialized: table
+    monthly_order_count:
+      +materialized: table

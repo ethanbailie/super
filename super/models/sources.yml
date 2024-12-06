@@ -1,0 +1,11 @@
+version: 1
+
+sources:
+  - name: raw
+    schema: source
+    tables:
+      - name: customers
+      - name: orders
+      - name: order_lines
+      - name: products
+      - name: vendors
