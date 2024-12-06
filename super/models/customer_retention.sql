@@ -35,6 +35,8 @@ retention as (
 select
     retention.cohort_month,
     retention.activity_month,
+    retention.active_customers as cohort_active_customers,
+    cohort_sizes.total_customers as cohort_total_customers,
     trunc(retention.active_customers / cohort_sizes.total_customers, 2) as customer_retention
 from retention
 left join cohort_sizes
