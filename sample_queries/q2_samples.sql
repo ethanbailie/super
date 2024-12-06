@@ -1,4 +1,6 @@
 -- this file contains sample queries related to what someone might do on top of the cohort data models
+-- the samples here dont cover the lifetime value model, but its very similar in use-case
+-- for example, if you wanted to see value change monthly per cohort, the query would look very similar to sample query 2
 
 -- what is the average retention rate for the current month across all previous cohorts?
 select 
